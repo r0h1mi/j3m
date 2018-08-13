@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+body {
+  margin: 0;
+  font-size: 28px;
+}
+
+
+}
+.header-image {
+  background-image:url("PhotosG3M/main.png");
+
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  background-image: url("PhotosG3M/main.png");
+  background-size: 110% 110%
+}
+
+.sidebar {
+     position: fixed;
+     width: 100px;
+     height: 100%;
+     z-index: hidden;
+     top:0;
+     left:0;
+     background-image: linear-gradient(to top, #ffb47e, #ffacad, #fcb3dd, #d4c3f9, #add1fb);
+     overflow-y: auto;
+     z-index: 999;
+     overflow-x:hidden;
+     padding-top:16px;
+     -webkit-transition: left 300ms;
+     -o-transition: left 300ms;
+     transition: left 300ms;
+ }
+ .sidebar a {
+  padding: 50px 50px 50px 50px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.sidebar a:hover {
+
+}
+
+
+  .sidebar {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+  }
+h2 {
+  font-size: 80px;
+  font-style: italic;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "";
+  src: url();
+  
+
+  letter-spacing: .3rem;
+}
+h3 {
+  font-size: 20px
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: "sans-serif",fantasy,monospace;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
