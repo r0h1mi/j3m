@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+    <title>J3M</title>
+  </head>
+
+  <body>
+
+<!--i tried to make loading page-->
+    <div id="loading"></div>
+      <script>
+        $(window).ready(function() {
+        $('#loading').hide();
+        });
+      </script>
+
+
+<!--the ul/li makes nav bar float-->
+    <ul>
+      <div class="topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Photo GALLERY</a></li>
+        <li><a href="#">Contact</a></li>
+      </div>
+    </ul>
+
+
+<!--this is our main logo inthe center-->
+      <div>
+        <center>
+          <img src="logo2.jpg" alt="J3M LOGO" class="image"
+          height="800"
+          width="800"
+          hspace="1">
+        </center>
+      </div>
+
+<!--for our preview slides-->
+      <center>
+        <p style="font-family:'BOVEN3'">This is a test sentence</p>
+      </center>
+
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="preview1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="preview3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="preview21.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+
+
+      <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          x[slideIndex[no]-1].style.display = "block";
+        }
+      </script>
+
+
+  </body>
+</html>
