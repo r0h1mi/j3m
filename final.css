@@ -1,0 +1,30 @@
+ul {
+width:750px;
+margi-left: 150px;
+padding:100;
+list-style::none;
+}
+#nav li {
+float:left;
+}
+#nav a {
+display: block;
+text-align:center;
+width:150px;
+text-decoration:none;
+font-family: "Impact, Charcoal, sans-serif"
+}
+/*Bar Color*/
+#nav,#nav-inner,.nav-list,.nav-list-item a{
+background-color:#FE8A37;
+color: #fffff0;
+}
+
+.nav-lsit-item a:hover{
+  background: #333;
+  color:#fff;
+}
+#nav{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
