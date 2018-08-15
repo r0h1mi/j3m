@@ -1,4 +1,43 @@
-h4 {font-family: sans-serif; font-size: 18px;font-weight: lighter;}
-h5 {font-family: arial; font-size: 16px; font-weight: bold;}
-h3 {font-family: roboto thin; font-size: 17px; font-weight: lighter;}
-h2 {font-family: madelina script; font-weight: normal; font-size: 50px;}
+
+body {
+  background-image: linear-gradient(to top, #ffb47e, #ffacad, #fcb3dd, #d4c3f9, #add1fb);
+
+}
+
+@font-face {
+  font-family: roboto-light;
+  src: url(customfont/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Madelina;
+  src: url(customfont/Madelina.ttf);
+}
+
+@font-face {
+    font-family: "english_essay";
+    src: url(customfont/english_essay.ttf);
+}
+
+h4 {
+  font-family: Madelina;
+  font-size: 18px;font-weight: lighter;
+}
+
+h5 {
+  font-family: roboto-light; font-size: 23px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: roboto-light;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1px;
+}
+h2 {
+  font-family: Madelina;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 1px;
+}

@@ -1,56 +1,97 @@
-<!DOCTYPE html>
+@font-face {
+   font-family: "ChasingEmbersDemoVersion";
+   src: url(customfont/ChasingEmbersDemoVersion.ttf);
+}
+@font-face {
+   font-family: "Gloss_And_Bloom";
+   src: url(customfont/Gloss_And_Bloom.ttf);
+}
+@font-face {
+  font-family: "velocity";
+  src: url(customfont/velocity.ttf);
+}
+@font-face {
+  font-family: "CaviarDreams";
+  src: url(customfont/CaviarDreams.ttf);
+}
+
+h2, h3{
+  line-height: 20px;
+}
+
+h3 {
+  line-height: 55px;
+}
+
+h2 {
+  color: #FE8A37;
+  font-size: 200px;
+  text-shadow: 1px 5px 0 White
+}
+
+h3 {
+  font-size: 48px;
+  color: #73C6B6;
+  text-shadow: 1px 1px 0 #D0ECE7;
+  text-transform: lowercase;
+  text
+}
+
 body {
   margin: 0;
   font-size: 28px;
 }
 
-
+p {
+  font-family: Gloss_And_Bloom;
 }
+
 .header-image {
-  background-image:url("PhotosG3M/main.png");
+  background-image: url("header.jpg");
 
 }
 .header {
   background-color: #f1f1f1;
   padding: 30px;
   text-align: center;
-  background-image: url("PhotosG3M/main.png");
-  background-size: 110% 110%
-}
-
-.sidebar {
-     position: fixed;
-     width: 100px;
-     height: 100%;
-     z-index: hidden;
-     top:0;
-     left:0;
-     background-image: linear-gradient(to top, #ffb47e, #ffacad, #fcb3dd, #d4c3f9, #add1fb);
-     overflow-y: auto;
-     z-index: 999;
-     overflow-x:hidden;
-     padding-top:16px;
-     -webkit-transition: left 300ms;
-     -o-transition: left 300ms;
-     transition: left 300ms;
- }
- .sidebar a {
-  padding: 50px 50px 50px 50px;
-  text-decoration: none;
-  font-size: 20px;
-  display: block;
-}
-
-.sidebar a:hover {
+  background-image: url("head1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
-
-  .sidebar {
-    position: -webkit-sticky;
+.icon-bar {
+    width: 50px;
+    background-image: linear-gradient(to top, #ffb47e, #ffacad, #fcb3dd, #d4c3f9, #add1fb);
     position: fixed;
-    top: 0;
-  }
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: White;
+    color: #FE8A37;
+}
+
+.active {
+    background-color: #FE8A37;
+}
+
+#page-wrap {
+  width: 600px;
+  margin: 15px auto;
+  position: relative;
+}
+
+
+
 h2 {
   font-size: 80px;
   font-style: italic;
@@ -58,10 +99,9 @@ h2 {
   text-align: center;
   font-family: "";
   src: url();
-  
-
   letter-spacing: .3rem;
 }
+
 h3 {
   font-size: 20px
   font-style: italic;
